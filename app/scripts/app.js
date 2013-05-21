@@ -7,6 +7,10 @@ angular.module('shitshitApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/add', {
+        templateUrl: 'views/add.html',
+        controller: 'AddCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
